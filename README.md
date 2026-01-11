@@ -1,5 +1,5 @@
 # AuthSampleApp
-Demonstrates OAuth + PKCE in Swift
+Demonstrates OAuth 2.0 + PKCE in Swift
 
 # Resources/ Learning Material
 https://www.youtube.com/watch?v=996OiexHze0 (OAuth and OIDC)
