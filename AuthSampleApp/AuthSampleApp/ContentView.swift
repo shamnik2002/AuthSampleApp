@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    var viewModel: ContentViewModel
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button {
+                viewModel.authenticateWithAuth0()
+            } label: {
+                Text("Authenticate With Auth0")
+            }
+
+//            Text("GitHub")
+//                .onTapGesture {
+//                    viewModel.authenticateWithGitHub()
+//                }
+        }.onAppear{
+            
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
